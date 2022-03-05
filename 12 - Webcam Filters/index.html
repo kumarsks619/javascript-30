@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Webcam Filters</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="photobooth">
+            <div class="controls">
+                <button onClick="takePhoto()">Take Photo</button>
+                <button onClick="applyRedEffect()">Apply Red Effect</button>
+                <button onClick="applyRGBsplit()">Apply RGB Split Effect</button>
+                <button onClick="applyGhostEffect()">Apply Ghost Effect</button>
+                <button onClick="removeEffect()">Remove Effect</button>
+            </div>
+
+            <canvas class="photo"></canvas>
+            <video class="player"></video>
+            <div class="strip"></div>
+        </div>
+
+        <audio class="snap" src="./snap.mp3" hidden></audio>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
